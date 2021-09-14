@@ -5,7 +5,7 @@
 */
 
 #footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     height:65px;
     background-color: firebrick;
@@ -24,7 +24,7 @@ body {
     margin: 0;
     border-left: solid black; 
     border-right: solid black; 
-    padding-bottom: 26.5%;
+    padding-bottom: 25%;
 }
 
 nav {
@@ -42,7 +42,7 @@ nav {
 
 a {
     color: white;
-    font-size: 15px;
+    font-size: 13pt;
 }
 
 a:hover {
@@ -56,11 +56,14 @@ section {
     padding-left: 5px;
     font-size: 14pt;
     padding-top: 10px;
+    border: solid firebrick;
+    padding-bottom: 10px;
 }
 
 h1 {
     text-align: center;
     text-decoration: underline;
+    padding-top: 5px;
 }
 
 .imageofself {
@@ -70,7 +73,7 @@ h1 {
 .classlist {
     width: 30%;
     height: 100px;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
     border: solid grey;
     font-size: 14pt;  
 }
