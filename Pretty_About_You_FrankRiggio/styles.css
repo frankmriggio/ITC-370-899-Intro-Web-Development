@@ -4,13 +4,81 @@
     Date: 09/14/2021
 */
 
-#footer {
-    float: left;
-    position: fixed;
-    left: 0;
+#footer{
+    position: absolute;
     bottom: 0;
-    width: 100%;
-    background-color: grey;
+    height:65px;
+    background-color: firebrick;
     color: white;
+    border: 3px solid black;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+body {
+    background-color: whitesmoke;
+    padding: 5px;
+    margin: 0;
+    border-left: solid black; 
+    border-right: solid black; 
+    padding-bottom: 26.5%;
+}
+
+nav {
+    background-color: firebrick;
+    color: white;
+    border: 3px solid black;
+    left: 0;
+    right: 0;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    font-size: 14pt;
+}
+
+a {
+    color: white;
+    font-size: 15px;
+}
+
+a:hover {
+    color: rgb(222, 241, 110);
+    text-decoration: underline;
+}
+
+section {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 5px;
+    font-size: 14pt;
+    padding-top: 10px;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.imageofself {
+    text-align: center;
+}
+
+.classlist {
+    width: 30%;
+    height: 100px;
+    padding-bottom: 25px;
+    border: solid grey;
+    font-size: 14pt;  
+}
+
+.classesimage {
+    padding-left: 75px;
+}
+
+.ptext {
+    font-size: 14pt;
     text-align: center;
 }
