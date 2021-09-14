@@ -50,7 +50,7 @@ a:hover {
     text-decoration: underline;
 }
 
-section {
+.hobbiesp {
     display: grid;
     grid-template-columns: auto auto;
     padding-left: 5px;
