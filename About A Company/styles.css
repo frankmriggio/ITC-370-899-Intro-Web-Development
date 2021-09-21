@@ -1,0 +1,268 @@
+/*
+    Name: Frank Riggio
+    Assingment: About a Company
+    Date: 09/20/2021
+*/
+
+/* Begin styling for home page/landing page/index.html */
+
+/* Adding the basic CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Applying flex layout to nav ul element, removing default bullets for li elements, centering nav links */
+nav ul {
+    display: flex;
+    list-style: none;
+    top: 0;
+    margin-left: 1150px;
+    position: fixed;
+    margin-bottom: 100px;
+}
+
+/* Styling the links in nav ul element, applying some padding,increasing font size */
+nav a {
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding: 35px;
+    text-decoration: none;
+    font-size: 20px
+}
+
+/* Applying hover selector on anchor elements, setting link text to underline when hovering over them */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Styling the header border */
+header {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    background-color: skyblue;
+    border: 3px solid grey;
+}
+
+/* Positioning the border logo */
+header img {
+    width: 150px;
+    margin-top: 2px;
+    margin-left: 0;
+}
+
+/* Formatting and styling the footer */
+footer {
+    text-align: center;
+    position: fixed;
+    padding-bottom: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: skyblue;
+    border: 3px solid grey;
+    height: auto;
+}
+
+/* Formatting the h1, which is the name of the company */
+header h1 {
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* formatting the footer li elements */
+footer li {
+    display: inline;
+    list-style: none;
+    line-height: 1.5;
+    font-size: 16px;
+    padding-left: 15px;
+}
+/* modifying the footer text to make email portion black/not decorated */
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Applying hover selector for email anchor element in footer */
+footer a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Changing font size of copyright p */
+footer p {
+    font-size: 14px;
+}
+
+/* set background color for website */
+body {
+    background-color: aliceblue;
+}
+
+/* homepage body formatting section */
+.homepagebody {
+    margin-left: 900px;
+    margin-top: 50px;
+    display: inline-block;
+    line-height: 1.5;
+    background-color: skyblue;
+    font-size: 18px;
+    height: 360px;
+    width: 820px
+}
+/* adjusting the home page p text alignment */
+.homepagebody p {
+    margin-left: 20px;
+}
+
+/* formatting the h2 header for homepage */
+.homepagebody h2 {
+    text-align: center;
+}
+
+/* begin slideshow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: absolute;
+  margin-top: -365px;
+  margin-left: 10px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Begin styling for products page */
+
+/* Styling the product card image for Pacu */
+.pacu-product img {
+    width: 80%;
+    padding-bottom: 1px;
+}
+
+/* styling the pacu product card container */
+.pacu-product {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    margin-left: 140px;
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
+/* styling the product card image for Marley */
+.marley-product img {
+    width: 80%;
+    padding-bottom: 1px;
+    height: 568px; 
+}
+
+/* styling the marley product card container */
+.marley-product {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    margin-left: 760px;
+    margin-top: -730px;
+    line-height: 1.5;
+}
+
+/* Styling the product card image for Simba */
+.simba-product img {
+    width: 80%;
+    height: 568px;
+    padding-bottom: 1px; 
+}
+
+/* styling the simba product card container */
+.simba-product {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    margin-left: 1360px;
+    margin-top: -730px;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
