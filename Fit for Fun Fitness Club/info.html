@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!--
+        Name: Frank Riggio
+        Date: 10/05/2021
+        Assignment: Fit for Fun Fitnes Club
+    -->
+    <meta charset="utf-8">
+    <title>Course Registration</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Here to make fitness fun for all. Sign up for classes today!">
+</head>
+
+<body>
+    <header>
+        <h1>The Fit For Fun Fitness Club</h1>
+        <nav>
+            <ul class="nav">
+                <li class="nav"><a href="info.html">Class Sign Up Page</a></li>
+                <li class="nav"><a href="classes.html">Class Schedule</a></li>
+                <li class="nav"><a href="index.html">Home Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="infoh1">Class Sign Up Page</h1>
+    <form action="thankyou.html" method="get">
+        <fieldset>
+            <h2 class="infoh2">Please fill in the information below to sign up for a class/classes:</h2> 
+
+            <div class="first-last">
+                <div>
+                    <label for="firstname">First Name:</label>
+                    <input id="firstname" type="text" name="firstname" required />
+                </div>
+                <div>
+                    <label for="lastname">Last Name:</label>
+                    <input id="lastname" type="text" name="lastname" required />
+                </div>
+            </div>
+
+            <div class="email-phone">
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="text" name="email" required />
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input id="phone" type="text" name="phone" required />
+                </div>
+            </div>
+
+            <div class="contact">
+                <div>
+                    <label for="contact">The best way to contact me is by:</label>
+                    <select name="contact" id="contact">
+                        <option selected disabled hidden></option>
+                        <option value="Email">Email</option>
+                        <option value="Text Message">Text Message</option>
+                        <option value="Phone Call">Phone Call</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="classes">
+                <label for="classes"><b>Select which class/classes you would like to take:</b></label> <br/>
+                <input id="class1" type="checkbox" name="class1" value="Aerobics"/><label for="class1">Aerobics</label> <br/>
+                <input id="class2" type="checkbox" name="class2" value="Cycling"/><label for="class2">Cycling</label> <br/>
+                <input id="class3" type="checkbox" name="class3" value="Boxing"/><label for="class3">Boxing</label> <br/>
+                <input id="class4" type="checkbox" name="class4" value="Zumba"/><label for="class4">Zumba</label> <br/>
+            </div>
+
+            <div class="time">
+                <label for="time"><b>Select your preferred time to take your class/classes:</b></label> <br/>
+                <input id="am" type="radio" name="time" value="Morning (AM)"/><label for="am">Morning (AM)</label> <br/>
+                <input id="pm" type="radio" name="time" value="Afternoon (PM)"/><label for="pm">Afternoon (PM)</label> 
+            </div>
+
+            <div class="submit">
+                <button type="submit">Submit</button>
+            </div>
+
+        </fieldset>
+    </form>
+
+     <footer>
+        <ul>
+            <li><h3><u>Contact Us</u></h3></li>
+            <li><b>Phone Number:</b> 314-555-5555</li>
+            <li><b>Email:</b><a href="fitforfunfitness@gmail.com"> fitforfunfitness@gmail.com</a></li>
+            <li><b>Address:</b> 1312 West Bank Street, New Orleans, NO, 71582</li>
+        </ul>
+        <p> &#169; Copyright 2021 Fit For Fun Fitness Club. All Rights reserved.</p>
+    </footer>
+
+</body>

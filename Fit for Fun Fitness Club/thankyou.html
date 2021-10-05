@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+           Name: Frank Riggio
+           Date: 10/05/2021
+           Assignment: Fit for Fun Fitnes Club
+       -->
+       <meta charset="utf-8">
+       <title>Thank You!</title>
+       <link href="styles.css" rel="stylesheet" type="text/css">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta name="description" content="Here to make fitness fun for all. Sign up for classes today!">
+   </head>
+<body>
+    <header>
+        <h1>The Fit For Fun Fitness Club</h1>
+        <nav>
+            <ul class="nav">
+                <li class="nav"><a href="info.html">Class Sign Up Page</a></li>
+                <li class="nav"><a href="classes.html">Class Schedule</a></li>
+                <li class="nav"><a href="index.html">Home Page</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="registration">
+        
+        <div class="outputh1"><p><h1>Thank you for registering for a class/classes</h1></p></div>
+        <div class="h2output"><p><h2>Here is a confirmation of your registration information:</h2></p></div>
+        <div class="formoutput">
+            <p><b><u>First Name:</u></b></p><div class="output" id="firstname"></div>
+            <p><b><u>Last Name:</u></b></p><div class="output" id="lastname"></div>
+            <p><b><u>Email:</u></b></p><div class="output" id="email"></div>
+            <p><b><u>Phone Number:</u></b></p><div class="output" id="phone"></div>
+            <p><b><u>Best way to contact you:</u></b></p><div class="output" id=contact></div>
+            <p><b><u>Classes you are interested in:</u></b></p><div class="output" id=classes></div>
+            <p><b><u>Prefered class time(s):</u></b> </p><div class="output" id=time></div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><h3><u>Contact Us</u></h3></li>
+            <li><b>Phone Number:</b> 314-555-5555</li>
+            <li><b>Email:</b><a href="fitforfunfitness@gmail.com"> fitforfunfitness@gmail.com</a></li>
+            <li><b>Address:</b> 1312 West Bank Street, New Orleans, NO, 71582</li>
+        </ul>
+        <p> &#169; Copyright 2021 Fit For Fun Fitness Club. All Rights reserved.</p>
+    </footer>
+
+<script>
+    //get the multiple parameters from the query string
+    const params = new URLSearchParams(window.location.search)
+
+    //check if the form has passed in a First Name value
+    if(params.has('firstname')){
+        let firstname = params.get('firstname');
+        //Put the value into the field
+        document.getElementById("firstname").innerHTML = firstname;
+    } 
+
+    //check if the form has passed in a Last Name value
+    if(params.has('lastname')){
+        let lastname = params.get('lastname');
+        //Put the value into the field
+        document.getElementById("lastname").innerHTML = lastname;
+    }
+
+    //check if the form has passed in an email value
+    if(params.has('email')){
+        let email = params.get('email');
+        //Put the value into the field
+        document.getElementById("email").innerHTML = email;
+    }
+
+    //check if the form has passed in an phone value
+    if(params.has('phone')){
+        let phone = params.get('phone');
+        //Put the value into the field
+        document.getElementById("phone").innerHTML = phone;
+    }
+
+    //check if the form has passed in a contact value (best way to reach me)
+    if(params.has('contact')){
+        let contact = params.get('contact');
+        //Put the value into the field
+        document.getElementById("contact").innerHTML = contact;
+    }
+
+    //check if the form has passed in a prefered class time value
+    if(params.has('time')){
+        let time = params.get('time');
+        //Put the value into the field
+        document.getElementById("time").innerHTML = time;
+    }
+
+    //check if the form has passed in a value for classes offered
+    //this field assumes the following types of classes are used in the form checkbox values:
+    //class1=aerobics, class2=cycling, class3=boxing, class4=zumba
+    
+    let classes = "";
+    //if the class has been checked then append it to the variable so we can create a list.
+    if(params.has('class1')){
+        classes += params.get('class1') + ", "; 
+    }
+    if(params.has('class2')){
+        classes += params.get('class2') + ", "; 
+    }
+    if(params.has('class3')){
+        classes += params.get('class3') + ", "; 
+    }
+    if(params.has('class4')){
+        classes += params.get('class4'); 
+    }
+
+    //Put the appended value into the field
+    document.getElementById("classes").innerHTML = classes;
+</script>
+</body>
+</html>

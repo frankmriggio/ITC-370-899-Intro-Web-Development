@@ -1,0 +1,366 @@
+/*
+Name: Frank Riggio
+Date: 10/05/2021
+Assignment: Fit for Fun Fitnes Club
+*/
+
+
+/* Styling the Form. */
+
+fieldset {
+    border: 0;
+    padding: 0; 
+    padding-left: 685px;
+    padding-top: 40px;
+}
+ 
+ fieldset > div {
+    margin-bottom: 30px;
+}
+
+.first-last {
+    display: flex;
+    width: 500px;
+    margin-left: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.email-phone {
+    display: flex;
+    width: 500px;
+    margin-left: 26px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact {
+    font-weight: bold;
+    font-size: 14pt;
+    padding-left: 55px;
+}
+
+select {
+    width: 150px;
+    font-size: 12pt;
+    border: 2px solid black;
+}
+
+.classes {
+    font-size: 14pt;
+    line-height: 1.5;
+    padding-left: 55px;
+}
+
+.time {
+    font-size: 14pt;
+    line-height: 1.5;
+    padding-left: 55px;
+}
+
+button {
+    background: black;
+    border: none;
+    color: white;
+    width: 224px;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-left: 150px;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+h1.infoh1 {
+    margin-left: 0px;
+}
+
+.infoh2 {
+  margin-left: -40px;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+/* formatting the footer. */
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    height: auto;
+    width: 100%;
+    top: 840px;
+    color: white;
+}
+
+footer li {
+    display: inline;
+    list-style: none;
+    line-height: 1;
+    font-size: 16px;
+    padding: 0;
+    padding-right: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: orange;
+}
+
+footer p {
+    font-size: 14px;
+    padding-left: 30px;
+    font-style: italic;
+}
+
+footer h3 {
+    padding-right: 30px;
+}
+
+/* Styling the header. */
+header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0px;
+    left: 0;
+    color: white;
+}
+
+header ul {
+  list-style-type: none;
+  margin: auto;
+  overflow: hidden;
+}
+
+header li {
+    float: right;
+}
+
+header nav a {
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 115px 7px;
+  text-decoration: none;
+  font-size: 16pt;
+  
+}
+
+.nav a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* Styling the class schedule table */
+fieldset.table {
+    padding-left: 0;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-right: 100px;
+    width: 100%;
+    padding-top: 15px;
+}
+
+table{
+    background-color:white;
+    color:black;
+    border-right-width: thick;
+    border-bottom-width: thick;
+}
+
+th{
+    background-color: whitesmoke;
+    border-color: black;
+    border-width: 3px;
+    color: black;
+    height: 40px;
+    padding-left: 80px;
+    display: relative;
+    font-weight: bold;
+    width: 13%;
+  }
+  
+  
+td{
+    padding-left:  14px;
+    padding-bottom: 5px;
+    border-left-width: thick;
+    vertical-align: top;
+    width: 13%;
+  }
+  
+td.run {
+    border-left-width: thick;
+    border-left-color: royalblue;
+  }
+  
+td.strength {
+  border-left-width: thick;
+  border-left-color: orange;
+  }
+
+td.mix {
+  border-left-width: thick;
+  border-left-color: purple;
+}
+
+div.class {
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+div.teacher {
+  font-style: italic;
+  font-size: 10pt; 
+}
+
+/* Styling the slideshow on home page */
+/* begin slideshow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: absolute;
+  margin-top: -260px;
+  margin-left: 10px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+  }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  display: none;
+  color: gold;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color:white;
+  background: black;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* styling body text on home page */
+div.head {
+  position: relative;
+  margin-top: 115px;
+  margin-left: 1200px;
+}
+
+section.hometext {
+  position: relative;
+  margin-left: 1050px;
+  font-size: 12pt;
+  line-height: 1.5;
+}
+
+/* Styling the thank you page */
+div.registration {
+  padding-top: 95px;
+  text-align: center;  
+  padding-left: 0px;
+}
+
+div.output {
+  padding-left: 0px;
+  font-size:large;
+}
+
+div.h2output {
+  padding-left: 45px;
+}
+
+div.formoutput {
+  text-align: center;
+  font-size:large;
+}
+
+div.outputh1 {
+  text-transform: uppercase;
+}
+
+/* providing a body background color */
+body {
+  background-color: whitesmoke ;
+}
