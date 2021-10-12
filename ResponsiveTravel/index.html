@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Name: Frank Riggio
+        Date: 10/12/2021
+        Assignment: Responsive Travel
+    -->
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Create lasting memories with a trip to St.Lous, the gateway to the west.">
+    <title>Travel St. Louis - Home</title>
+    <style>
+        @media (min-width: 480px) and (max-width: 558px) {
+            .bodyimgtxt {
+                font-size: 14pt;
+                top: 10px;
+                left: 10px;
+            }
+            
+            .headerimg {
+                display: none;
+            }
+
+            .headerh1 {
+                padding: 5px;
+            }
+
+            nav a {
+                margin-left: 0;
+                padding: 0;
+                margin-top: 30px;
+                margin-right: 15px;
+            }
+
+            .footerl1, .footerl2 {
+                padding-left: 50px;
+            }
+
+            footer p {
+                padding-left: 15px;
+            }
+
+            article p {
+                font-size: 18pt;
+                margin-left: 15px;
+            }
+
+            body {
+                width: 100%;
+            }
+        }    
+
+            @media (max-width:479px) {
+            .headerimg {
+                display: none;
+            }
+
+            .headerh1 {
+                padding: 5px;
+            }
+
+            body {
+                width:fit-content; 
+                background: white;
+            }
+
+            .bodyimgtxt {
+                display: none;
+            }
+
+            .headerh1 {
+                padding-top: 20px;
+                padding-left: 5px;
+                font-size: 8pt;
+            }
+
+            .bodyimg {
+                width: 100%;
+            }
+
+            article p {
+                padding-left: 0;
+                font-size: 18pt;
+                line-height: 1.5;
+            }
+
+            nav a {
+                margin-left: 0;
+                padding: 0;
+                margin-top: 15px;
+                margin-right: 5px;
+                font-size: 12pt;
+                padding-left: 25px;
+                text-align: left;
+            }
+
+            nav ul {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+
+            article h2 {
+                font-size: 28px;
+            }
+
+            .footerl1, .footerl2 {
+                padding: 20px;
+                padding-left: 40px;
+                padding-top: 0px;
+                
+            }
+
+            .footerl2 {
+                margin-top: 17px;
+            }
+
+            footer p {
+                left: 50px;
+                padding-bottom: 0px;
+                font-size: 10pt;
+            }
+
+            .footercontainer {
+                font-size: 12pt;
+            }
+        }
+
+        @media (min-width: 559px) and (max-width: 970px) {
+            body {
+                width:fit-content; 
+                background:lightgrey;
+            }
+
+            .headerh1 {
+                padding-top: 10px;
+                padding-left: 10px;
+            }
+
+            nav a {
+                margin-right: 0px;
+                padding: 0;
+                padding-top: 22px;
+                margin-left: 15px;;
+            }
+        }
+
+        
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navcontainer">
+            <div class="headerimg"><img src="stlflag.png"></div>
+            <div class="headerh1"><h1>Travel St.Louis</h1></div>
+            <nav>
+                <ul>
+                <li class="link1"><a href="index.html">Home</a></li>
+                <li class="link2"><a href="entertainment.com">Entertainment</a></li>
+                <li class="link3"><a href="dining.com">Dining</a></li>
+                <li class="link4"><a href="stlhistory.com">History</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bodycontainer">
+        <div class="bodyimgcontainer">
+            <img class="bodyimg" src="archbodyimg.jpg">
+            <div class="bodyimgtxt"><b>Enjoy the Sites in St. Louis</b></div>
+        </div>
+        <br>
+        <article>
+            <h2>Welcome to St. Louis, the Gateway of the West</h2>
+            <br>
+            <p>
+                Lying in the heart of the United States midwest, St. Louis is a city bustling with adventures and good times.
+                Whether your ideal vacation involves eating delicious food, attending sports games with die-hard fans, hitting
+                up the town to enjoy the night life, getting up close with wildlife at the zoo, or even exploring historical locations, 
+                St. Louis has your vacation needs covered. You could even catch some fine arts performances at the St. Louis
+                Municipal Opera Theatre, known simply as The Muny to the locals, or see some beautiful plant life at the Missorui
+                Botanical Garden. Last, but certainly not least, you can witness an architetural marvel by visiting the Gateway Arch, 
+                the shining symbol of the city and what gives St. Louis its nickname as the gateway to the west.
+            </p>
+            <br>
+            <p>
+                St. Louis is a place that is full of adventure, with somethin to satisfy everyone's needs for a good time. One of the most
+                popular places to visit includes the St. Louis Zoo, a zoo with over 11,000 animals, natural habitat exhibits, and no cost 
+                to enter. For those who love science, the St. Louis Science Center and the St. Louis Planetarium are important stops during
+                your vacation, as you can explore the wonders of science and the universe. For those who are looking for some fine art to view, 
+                the St. Louis Art Museum is a wonderful place to visit, with over 30,000 pieces of art from various time frames and cultures, plus
+                some unique exhibits like ancient Egyptian mummies! For the sports lvoers out there, St. Louis boasts two popular professional sports
+                teams, teh St. Louis Cardinals baseball team and the St. Louis Blues hockey team, so make sure to catch a game while you're here!
+            </p>
+        </article>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="footercontainer">
+          <ul class="footerl1">
+              <li><b><u>Travel St. Louis</u></b></li>
+              <li>1109 Walnut Avenue</li>
+              <li>St. Louis, MO 63129</li>
+              <li>(314) 555-5555</li>
+              <li><a href="travelstl@gmail.com">travelstl@gmail.com</a></li>
+          </ul>  
+
+          <ul class="footerl2">
+              <li><a href="privacypolicy.com">Privacy Policy</a></li>
+              <li><a href="termsofuse.com">Terms of Use</a></li>
+              <li><a href="facebook.com">Follow us on Facebook</a></li>
+              <li><a href="twitter.com">Follow us on Twiter</a></li>
+          </ul>
+
+          <p>Copyright &#169; 2021 Travel St. Louis. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
