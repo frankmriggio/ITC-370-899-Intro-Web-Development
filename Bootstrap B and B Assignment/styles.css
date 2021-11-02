@@ -1,0 +1,29 @@
+.nav-item {
+    margin-left: 235px;
+}
+
+i {
+    margin-right: 5px;
+}
+
+.intro {
+    font-size: 14pt;
+    margin: 0;
+}
+
+.intro2 {
+    font-size: 14pt;
+}
+
+.rooms {
+    text-align: center;
+    font-size: 14pt;
+}
+
+.card {
+    display: inline-block;
+    margin-left: 6.5%;
+}
+
+
+
