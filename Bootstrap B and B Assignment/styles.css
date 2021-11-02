@@ -25,5 +25,50 @@ i {
     margin-left: 6.5%;
 }
 
+.white {
+    background-color: white;
+}
+
+.amen {
+    background-image: url(images/background.png);
+    color: black;
+    padding: .3%;
+}
+
+.amen h2 {
+    text-align: center;
+}
+
+.amen li {
+    font-weight:bold;
+    margin-left: 23%;
+}
+
+footer p {
+    display:inline-block;
+    padding: 0;
+    padding-top: .7%;
+    margin-left: 15px;
+}
+
+.col {
+    margin-bottom: 20px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;width:600px;
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:575px;
+    width:600px;
+}
+
+
+
 
 
