@@ -4,13 +4,13 @@
     Assignment: Image Swapping
 */
 
-function changeImage(a) {
+function changeImage(a){
     document.getElementById("img").src=a;
 }
 
 document.getElementById("img").addEventListener("dblclick", function() {
     if(pic1.src = "a1green.png"){
-        pic1.src = "a2cyan.png";}
+        pic1.src="a2cyan.png";}
         else{
             pic1.src = "a1green.png"
         }
