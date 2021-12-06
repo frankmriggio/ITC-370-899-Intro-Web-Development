@@ -28,3 +28,15 @@ body {
 .thumbnail:hover {
     box-shadow: 4px 4px 4px 4px black;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 16pt;
+}
+
+footer a {
+   text-decoration: none;
+   color: white;
+}
