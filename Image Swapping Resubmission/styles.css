@@ -1,0 +1,30 @@
+/*
+    Frank Riggio 
+    ITC 370-899
+    Image Swapping Resubmission
+    12/5/2021
+*/
+
+.thumbnail {
+    width: 250px;
+    height: 150px;
+    margin: 20px;
+}
+
+.mainImage {
+    margin: 20px;
+    width: 600px;
+    height: 300px;
+}
+
+body {
+    margin: auto;
+}
+
+.mainImage, .thumbnail {
+    border: 3px solid black;
+}
+
+.thumbnail:hover {
+    box-shadow: 4px 4px 4px 4px black;
+}
